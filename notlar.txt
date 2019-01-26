@@ -1,0 +1,5 @@
+sondaki nokta bulunduğu klasöre kopyala demek....
+PS C:\movieapi> git clone https://github.com/onselaydin/movieapi.git .
+
+Hangi dosyalar yeni yada değişiklik yapıldı gösterir
+PS C:\movieapi> git status
