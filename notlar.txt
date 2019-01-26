@@ -3,3 +3,17 @@ PS C:\movieapi> git clone https://github.com/onselaydin/movieapi.git .
 
 Hangi dosyalar yeni yada değişiklik yapıldı gösterir
 PS C:\movieapi> git status
+
+bütün dosyaları versiyon kontrolüne eklemek
+PS C:\movieapi> git add .
+
+git epostamızı  tanıtma
+PS C:\movieapi> git config --global user.email "onselaydin@gmail.com"
+
+dosyalarımızı gite eklemek
+PS C:\movieapi> git commit -m "not text dosyası ekledik."
+
+gite gönderme
+PS C:\movieapi> git push origin master
+
+https://mlab.com/home
