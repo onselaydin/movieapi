@@ -10,3 +10,4 @@ Route | HTTP Verb   | Post body     | Description   |
 /api/movies/:movie_id | 'PUT' | Empty | {'name': 'foo', 'surname':'bar' | update movie |
 /api/movies/:movie_id | 'DELETE' | Empty | Delete moview |
 /api/movies/top10 | 'GET' | Empty | Get 10 movie |
+/api/movies/between:start_yeat/:end_year | 'GET' | Empty | movies between |
