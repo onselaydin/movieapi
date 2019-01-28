@@ -1,7 +1,7 @@
 # movieapi
 nodejs api prj
 
-#Movies
+# Movies
 Route | HTTP Verb   | Post body     | Description   |
 --- | --- | --- | --- |
 /api/movies | 'GET' | Empty | List all movies |
