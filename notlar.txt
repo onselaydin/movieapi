@@ -16,5 +16,8 @@ PS C:\movieapi> git commit -m "not text dosyası ekledik."
 gite gönderme
 PS C:\movieapi> git push origin master
 
+gitten projenin son halini almak
+git pull origin master
+
 https://mlab.com/home
 mongodb://movie_user:abcd1234@ds213645.mlab.com:13645/movieapi
