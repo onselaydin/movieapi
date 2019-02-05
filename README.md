@@ -21,3 +21,7 @@ Route   |   HTTP Verb   |   Post Body   |   Description |
 /api/directors/:director_id | PUT | {name:'foo', surname:'bar'} | update director
 /api/directors/:director_id | DELETE | Empty | delete director.
 /api/directors/bes10movie | GET | Empty | Top 10 film
+
+# Users
+Route   |   HTTP Verb   |   Post Body   |   Description |
+/register | POST | {username:'foo',password:'1234'} | Create a new user  
