@@ -21,3 +21,10 @@ git pull origin master
 
 https://mlab.com/home
 mongodb://movie_user:abcd1234@ds213645.mlab.com:13645/movieapi
+
+bcrypt
+www.npmjs.com/package/bcrypt
+
+json web token
+www.jwt.io
+npm install jsonwebtoken
