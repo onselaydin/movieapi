@@ -73,5 +73,31 @@ https://oncellmovie.herokuapp.com/
 
 https://api.travis-ci.org/onselaydin/movieapi.svg
 
+--digitalocean.com--
+ssh roo@ip
+sudo 
+wwww altında git clone repo linki ile nodejs uygulamamızı aldık
+nodejs uygulamasını sürekli açık tutmak için
+--PM2--
+https://www.npmjs.com/package/pm2
+npm install -g pm2   -- global olarak pm2 yu kurduk.
+pm2 start bin/www  --- uygulamayı çalıştırır.
+pm2 stop www --uygulamayı durdurur.
+pm2 restart www --uygulamayı yeniden başlatır.
+pm2 monit --- uygulamayı izlemek için
+pm2 logs --- tutulan logları gösteriyor.
 
+---nginx reverse proxy---
+linuxda kurulum
+# sudo apt-get install nginx
+ayarlar için örneğin 3000 portunu 80 e yönlendirmek için
+# sudo vi /etc/nginx/sites-available/default
+vi editorunde de bişey yazmak için (i) harfini kullan
+dd yaparsak satır siler, inserted çıkmak için esc
+kaydetmek için : wq
+location satırına geliyoruz.
+
+--load balace --vagrant---
+mehmetseven.net/nginx-ve-nodejs-ile-load-balancing
+www.ctl.io/inages/load-balancing.png
 
