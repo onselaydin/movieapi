@@ -1,4 +1,4 @@
-[![Build status](https://travis-ci.org/onselaydin/movieapi)](https://travis-ci.org/onselaydin/movieapi.svg)
+[![Build status](https://travis-ci.org/onselaydin/movieapi.svg)](https://travis-ci.org/onselaydin/movieapi)
 
 # movieapi
 nodejs api prj
