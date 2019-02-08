@@ -53,4 +53,7 @@ ilk satır ise heroku için.
 "start": "node ./bin/www",
 "start:dev": "nodemon ./bin/www",
 
+herokuya deploy yapmadan önce git e push yap
 PS C:\movieapi> git push heroku master
+siteyi açmak için aşağıdaki komut yada orda yazan link
+c:\movieapi>heroku open 
