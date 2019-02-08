@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 const User = require('../models/Users');
 /* GET home page. */
 router.get('/', (req, res, next) => {
-  res.render('index', { title: 'Hknyclcll naber :) işte heroku...' });
+  res.render('index', { title: 'code > github > travis > heroku' });
 });
 
 router.post('/register', (req, res, next) => {
