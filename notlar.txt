@@ -34,3 +34,20 @@ npm install --global mocha
 chaijs.com
 npm install mocha chai chai-http --save-dev
 
+https://www.npmjs.com/package/node-xlsx
+npm install node-xlsx --save
+
+uygulama scale etmek için(sunucu yönetimi)
+www.heroku.com
+document linkinden windows cli indir kur
+cli a girip $ heroku login ile giriş yap
+
+heroku create
+git remote
+
+package da aşağıdaki değişiği yaptık. Artık localimde
+uygulamayı çalıştırırken npm start:dev demem gerekiyor.
+ilk satır ise heroku için.
+
+"start": "node ./bin/www",
+"start:dev": "nodemon ./bin/www",

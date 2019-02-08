@@ -5,6 +5,7 @@ const server = require('../app');
 
 chai.use(chaiHttp);
 
+
 describe(' Node Server ', () => {
     it('(GET /) anasayfayı döndürür',(done) => {
         chai.request(server).get('/').end((err, res) => {
@@ -13,11 +14,11 @@ describe(' Node Server ', () => {
         });
        
     });
-    it('(GET /) movies döndürür',(done) => {
+    /*it('(GET /) movies döndürür',(done) => {
         done();
     });
     it('(GET /) kullanıcıları döndürür',(done) => {
         done();
     });
-
+    */
 });
