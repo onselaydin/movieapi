@@ -69,5 +69,9 @@ github ile üye ol. Repolar geliyor.
 projende .travis.yml dosyası oluştur.
 dosya içeriği ile ilgili bir çok ayar var travis dökümanlarından temin edilebilir.
 
+https://oncellmovie.herokuapp.com/
+
+https://api.travis-ci.org/onselaydin/movieapi.svg
+
 
 
