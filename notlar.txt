@@ -57,3 +57,17 @@ herokuya deploy yapmadan önce git e push yap
 PS C:\movieapi> git push heroku master
 siteyi açmak için aşağıdaki komut yada orda yazan link
 c:\movieapi>heroku open 
+
+==Travis CI==
+CI ( contunious integration)
+uygulama yazılıp buil ve test sonuçlarının developera kadar iletilmesi
+CD (contunious delivery) 
+uygulama yazıldı build edildi test sonuçları yazılımcıya gitti testler
+başarılı ise deploy edildi 
+https://travis-ci.org
+github ile üye ol. Repolar geliyor.
+projende .travis.yml dosyası oluştur.
+dosya içeriği ile ilgili bir çok ayar var travis dökümanlarından temin edilebilir.
+
+
+
