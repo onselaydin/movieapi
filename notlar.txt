@@ -37,6 +37,7 @@ npm install mocha chai chai-http --save-dev
 https://www.npmjs.com/package/node-xlsx
 npm install node-xlsx --save
 
+---HEROKU---
 uygulama scale etmek için(sunucu yönetimi)
 www.heroku.com
 document linkinden windows cli indir kur
@@ -51,3 +52,5 @@ ilk satır ise heroku için.
 
 "start": "node ./bin/www",
 "start:dev": "nodemon ./bin/www",
+
+PS C:\movieapi> git push heroku master
