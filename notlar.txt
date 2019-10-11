@@ -19,8 +19,54 @@ PS C:\movieapi> git push origin master
 gitten projenin son halini almak
 git pull origin master
 
+.gitignore dosyası klasör için .idea/*     dosya için web.config*
+
+>node -v
+--nodemon kullanımı--
+Herhangi değişiklik yapıldığında restart
+- >npm install nodemon -g   (önce kuruyoruz.)
+
+--Bir html dosyası sunmak--
+serve-html.js dosyası ekle
+const http = require('http');
+const fs = require('fs');
+const server = http.createServer((request, response) => {
+    console.log('Bir istekte bulunuldu');
+    response.writeHead(200, {'content-type':'text/html; charset=utf-8' });
+    fs.ReadFile('index.html',(err, data) => {
+        if(err)
+            throw err;
+        response.end(data);
+    });
+});
+server.listen(3001);
+> nodemon serve-html.js  diyerek serverımızı çalıştırıyoruz.
+
+
 https://mlab.com/home
 mongodb://movie_user:abcd1234@ds213645.mlab.com:13645/movieapi
+
+Mongo komutları
+>mongo --version
+>mongo komutu ile komut satırına girilir.
+>show dbs  -- veritabanlarını listeler.
+>use vertabanım --veritabanını seçili hale getirir
+>show collection -- tabloları listeliyor.
+RoboMongo -- mongodb yönetim arayüzü
+
+RestApi için (express(get,post,put,delete için))
+https://medium.com/@berkekurnaz/node-js-express-ve-mongodb-i%CC%87le-restful-api-yazmak-62643b8bcceb
+https://stackoverflow.com/questions/58213106/how-do-i-use-express-generator-to-make-node-skeleton-for-html-view-engine
+- Proje Klasörü aç
+- >npm init -y
+- >npm install express --save   (node module klasörüne kaydetmek için)
+- >npm install express -g (global kurmak için kullanılır.)
+- >npm install express-generator -g
+- >npm install body-parser --save    (json parse için)
+- >express -v ejs
+- >npm install
+PS C:\expresstest> npm start
+
 
 --bcrypt
 www.npmjs.com/package/bcrypt
