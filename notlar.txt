@@ -67,6 +67,9 @@ https://stackoverflow.com/questions/58213106/how-do-i-use-express-generator-to-m
 - >npm install
 PS C:\expresstest> npm start
 
+--projedeki paketleri güncellemek--
+> npm outdated 
+>npm update --save/--save-dev -f
 
 --bcrypt
 www.npmjs.com/package/bcrypt
