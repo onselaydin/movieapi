@@ -58,7 +58,7 @@ RestApi için (express(get,post,put,delete için))
 https://medium.com/@berkekurnaz/node-js-express-ve-mongodb-i%CC%87le-restful-api-yazmak-62643b8bcceb
 https://stackoverflow.com/questions/58213106/how-do-i-use-express-generator-to-make-node-skeleton-for-html-view-engine
 - Proje Klasörü aç
-- >npm init -y
+- >npm init -y // bu bizim package.json dosyamısı oluşturur
 - >npm install express --save   (node module klasörüne kaydetmek için)
 - >npm install express -g (global kurmak için kullanılır.)
 - >npm install express-generator -g
@@ -149,4 +149,73 @@ location satırına geliyoruz.
 --load balace --vagrant---
 mehmetseven.net/nginx-ve-nodejs-ile-load-balancing
 www.ctl.io/inages/load-balancing.png
+	
+00086816124317925102
 
+
+Timer timer = new Timer();
+timer.Interval = 300000;
+timer.Elapsed += TimerOnElapsed;
+timer.Start();
+
+private void TimerOnElapsed(object sender, ElapsedEventArgs elapsedEventArgs)
+{
+	// Do stuff
+}
+
+
+--basit bir routing yapısı--
+
+if(request.method ==="GET"){
+    if(request.url ==='/')
+        response.write("indexteyiz");
+    else if (request.url === "/iletisim")
+        response.write("iletişimdeyiz.");
+    else  
+        response.write("bu sayfa bulunamadı");
+}
+
+
+------------read-stream.js
+const fs= require('fs');
+const file = require('video.mp4');
+const readStream = fs.createReadStream(file);
+let progress=0;
+fs.stat(file,(err,data)=>{
+    const total = data.size;
+    console.log(total);
+});
+readStream.on('data', (chunk) => {
+    console.log('bir veri geldi')
+    progress += chunk.lenght;
+});
+readStream.on('end', (chunk) => {
+    console.log('okuma bitti');
+    console.log(progress);
+});
+
+///------------------------express kurulumu
+npm install express --save  //bu package.json oluşturacak ve içine ekleyecek.
+expresstest.js dosyası oluştur içine alttakini yapıştır
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+    res.send('express')
+});
+
+app.listen(3000,()=> {
+    console.log("express çalıştı");
+});
+
+çalıştırmak için
+$ nodemon expresstest.js
+
+yeni klasör aç içine gir >express .   komutunu çalıştır. > npm install ile olmayan paketleri kur.
+package.json dosyasondaki start satırındaki node u nodemon yap. >npm start ile projeyi çalıştır.
+npm start yaptıktan sonra DeprecationWarning lere dikkat et bir pass option varsa ekle...
+örneğin mongoose.connect('mongodb://10.16.15.89/LOS',{ useNewUrlParser: true, useUnifiedTopology:true })
+useNewUrlParser ve useUnifiedTopology sonradan ekledim.
+
+npm install mongodb den sonra app.js e var mongoose = require('mongoose'); referans et.
+www dosyasında sucunu bilgileri var post vs.
