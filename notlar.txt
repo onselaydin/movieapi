@@ -310,6 +310,7 @@ Model
 
 Not: nodemon alternatif supervisor  > npm install supervisor --save
 
+https://mongoosejs.com/docs/schematypes.html
 
-
-
+mongoose 
+https://stackoverflow.com/questions/35080689/getting-an-empty-response-returned-from-nodejs-express
