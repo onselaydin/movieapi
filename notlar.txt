@@ -21,6 +21,10 @@ git pull origin master
 
 .gitignore dosyası klasör için .idea/*     dosya için web.config*
 
+--pull ile gelezse--
+git fetch origin master
+git reset --hard FETCH_HEAD
+
 >node -v
 --nodemon kullanımı--
 Herhangi değişiklik yapıldığında restart
