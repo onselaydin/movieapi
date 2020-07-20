@@ -25,6 +25,27 @@ git pull origin master
 git fetch origin master
 git reset --hard FETCH_HEAD
 
+--branch--
+Yeni branch oluşturmak
+git branch skt_kontrol
+
+Yeni branch oluşturmak ve aktif etmek
+git checkout -b skt_kontrol
+
+Branch Listesi
+git branch
+
+istenilen branch aktiv etmek
+git checkout master
+
+senaryo
+git checkout skt_kontrol
+** Dosyada değişiklikleri yap **
+git commit -am "create skt method"
+git checkout master
+git merge skt_kontrol
+
+
 >node -v
 --nodemon kullanımı--
 Herhangi değişiklik yapıldığında restart
