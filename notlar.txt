@@ -31,6 +31,7 @@ git branch skt_kontrol
 
 Yeni branch oluşturmak ve aktif etmek
 git checkout -b skt_kontrol
+git push -u origin skt_kontrol   (remote yapıyoruz)
 
 Branch Listesi
 git branch
@@ -40,6 +41,7 @@ git checkout master
 
 senaryo
 git checkout skt_kontrol
+git push -u origin skt_kontrol
 ** Dosyada değişiklikleri yap **
 git commit -am "create skt method"
 git checkout master
