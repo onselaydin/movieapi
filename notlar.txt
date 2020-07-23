@@ -63,13 +63,15 @@ https://medium.com/@berkekurnaz/node-js-express-ve-mongodb-i%CC%87le-restful-api
 https://stackoverflow.com/questions/58213106/how-do-i-use-express-generator-to-make-node-skeleton-for-html-view-engine
 - Proje Klasörü aç
 - >npm init -y // bu bizim package.json dosyamısı oluşturur
-- >npm install express --save   (node module klasörüne kaydetmek için)
+- >npm install express --save   (node module klasörüne kaydetmek için) //varolan bir proje içine dahil etmek için.
 - >npm install express -g (global kurmak için kullanılır.)
-- >npm install express-generator -g
+- >npm install express-generator -g   //express kurulumu
 - >npm install body-parser --save    (json parse için)
 - >express -v ejs
 - >npm install
 PS C:\expresstest> npm start
+--yeni bir express projesi oluşturmak için uygulamakalsoru>express myapp
+    yada uygulamaklasrou>express .
 
 --projedeki paketleri güncellemek--
 > npm outdated 
@@ -318,3 +320,85 @@ https://mongoosejs.com/docs/schematypes.html
 
 mongoose 
 https://stackoverflow.com/questions/35080689/getting-an-empty-response-returned-from-nodejs-express
+
+
+--REDİS--
+Session Store olarak tercih edilebilir.
+https://redis.io/  in-memory storage
+https://github.com/microsoftarchive/redis/releases
+Redis -- in memory, database, cache, message broker. isviçre çakısı gibi.
+# apt-get install redis-server  //kurulum
+# redis-cli ping  //test
+redise yazdığımız verileri görmek için https://tableplus.com
+tableplus aynı zamanda postgressql içinde kullanılır.
+
+https://github.com/meseven/arduino-nodejs-egitimi/tree/c98aed72a4516073b9ae895f0e4d0ba2e677d1ef/location-tracking
+https://github.com/mcollina/mosca/wiki
+
+# npm i redis mosca --save
+# killall node // tüm node proseslerini öldürür.
+# redis-cli monitor  
+https://github.com/meseven/arduino-nodejs-egitimi/tree/14b6422638a44800a32f237a1473fd8a45d5c6d2/location-tracking
+# wscat -c ws://localhost:3000 // bağlantı testi....
+
+npm install express-session --save //session oluşturmak için app içine referans et.
+npm install connect-redis --save //redise bağlanmak için
+https://github.com/tj/connect-redis
+
+
+--dotenv--
+örneğin connction string,google keyler benzeri sabit değişkenleri bu dosyada tutacağız.
+# npm install dotenv --save
+app.js içine ekle 
+const dotenv = require('dotenv');
+dotenv.config();
+Projenin ana dizinine .env isimli bir dosya oluştur.
+dosyanın içine örneğin NAME = onsel ve yagmur
+Kullanmak için istediğin bir sayfada
+    console.log(process.env.NAME)
+git yada github kullanıyorsak dosya servera gitmemesi için .gitignore dosyasındaa boş bir yerde .env olarak ekle
+
+--lodash--
+dizilerde sıralama, arama
+https://lodash.com/
+# npm install lodash --save
+kullanmak istediğin sayfada tanımla.
+const _ = require('lodash');
+örnek: _.orderBy(testarrayi,'alanim','asc');
+
+--Bower--
+Frontend bağımlılık yönetim aracı...
+https://www.youtube.com/watch?v=UhxGUaTm9RA&t=102s
+bowerı projemizde etkinleştirmek.
+# bower init
+# bower install angular --save
+
+--Asyn / Await Yapısı --
+https://www.gencayyildiz.com/blog/ecmascript-6-async-await-keywordleri/
+
+
+-- Module Kullanımı --
+örnek: 
+module.js
+    function foo() {
+        return 'bla bla';
+    }
+    module.exports = foo;
+index.js
+    const foo = require('./modul');
+    console.log(foo());
+
+--------------------
+chrome://inspect/#devices
+
+
+-- Hata Yönetimi ve Loglama --
+npm install winston --save
+npm install winston-redis --save
+
+
+--express ile api--
+klasör aç içine gir 
+>express .
+>npm install
+>npm start
