@@ -110,6 +110,9 @@ npm install --global mocha
 chaijs.com
 npm install mocha chai chai-http --save-dev
 
+npm install --global mocha
+https://stackoverflow.com/questions/56199111/visual-studio-code-cmd-error-cannot-be-loaded-because-running-scripts-is-disabl
+
 https://www.npmjs.com/package/node-xlsx
 npm install node-xlsx --save
 
